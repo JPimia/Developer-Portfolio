@@ -94,6 +94,7 @@ const ContactButton = styled.button`
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
+    z-index: 0;
     transition: transform 0.2s, box-shadow 0.2s;
     &:hover {
         transform: scale(1.05);

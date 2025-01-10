@@ -1,6 +1,7 @@
 import { GlobalStyles } from "./styles/GlobalStyles";
 import NavBar from "./components/NavBar";
 import "./styles/Styles.css";
+// import "./App.css";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/About";
 import ExperienceSection from "./components/Experience";

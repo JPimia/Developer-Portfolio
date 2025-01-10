@@ -24,6 +24,9 @@ a:hover {
 
 body {
   margin: 0;
+  background-image: url("./assets/images/LooperGroup2.png");
+  background-size: cover;
+  
   /* display: flex;
   place-items: center;
   min-width: 320px;
@@ -70,5 +73,5 @@ button:focus-visible {
 #canvas-container {
   width: 100vw;
   height: 100vh;
-  background-color: #272727;
+  /* background-color: #000000; */
 }
