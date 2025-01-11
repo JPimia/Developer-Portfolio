@@ -11,7 +11,7 @@ const HeroWrapper = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    // border: 2px solid red;
 `;
 
 const bounce = keyframes`

@@ -8,7 +8,7 @@ const NavBarWrapper = styled.header`
     z-index: 1000;
     backdrop-filter: blur(5px);
     background: transparent;
-    border: 2px solid red;
+    // border: 2px solid red;
     position: sticky;
     width: 100%;
     top: 0;

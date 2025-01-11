@@ -4,7 +4,7 @@ import styled from "styled-components";
 const AboutSectionWrapper = styled.section`
     width: 100%;
 
-    border: 2px solid blue;
+    // border: 2px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
