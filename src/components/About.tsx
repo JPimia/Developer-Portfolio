@@ -33,7 +33,8 @@ const AboutSection: React.FC = () => (
             I am a software developer with a passion for building web
             applications. I specialize in front-end development and have
             experience with React, Angular, and Vue. I am currently looking for
-            new opportunities to work with a team of talented developerssdsaasd.
+            new opportunities to work with a team of talented
+            developerssdsasdaasd.
         </Paragraph>
     </AboutSectionWrapper>
 );
