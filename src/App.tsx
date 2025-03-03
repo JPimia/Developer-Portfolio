@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/About";
 import ExperienceSection from "./components/Experience";
 import StarsCanvas from "./components/StarsBackground";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <HeroSection />
             <AboutSection />
             <ExperienceSection />
+            <Footer />
         </div>
     );
 }
