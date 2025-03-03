@@ -7,6 +7,7 @@ import heroImage from "../assets/images/hero-image.png";
 const HeroWrapper = styled.section`
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;

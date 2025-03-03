@@ -8,6 +8,7 @@ const AboutSectionWrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 80px;
 `;
 
 const Header = styled.h1`
