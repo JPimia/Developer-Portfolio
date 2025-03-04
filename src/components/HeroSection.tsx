@@ -12,7 +12,6 @@ const HeroWrapper = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border: 2px solid red;
 `;
 
 const bounce = keyframes`
@@ -27,13 +26,17 @@ const bounce = keyframes`
 `;
 
 const Heading = styled.h1`
+    width: 1000px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     font-size: 5rem;
     margin-bottom: 10px;
     animation: ${bounce} 1s infinite;
+    @media (max-width: 768px) {
+        flex-direction: column; /* Change to column on smaller screens */
+    }
 `;
 
 const SubHeading = styled.h2`
@@ -125,7 +128,7 @@ const HeroSection: React.FC = () => (
             <HeroImage src={heroImage} />
         </RoundCircle>
         <Heading>
-            Hi, I'm <Highlight2>Jari Pimiä!</Highlight2>
+            Hi, I'm<Highlight2>&nbsp;Jari Pimiä!</Highlight2>
         </Heading>
         <SubHeading>
             I like to Code &&nbsp;<Highlight>Chill</Highlight>
