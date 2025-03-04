@@ -9,7 +9,6 @@ const NavBarWrapper = styled.header`
     z-index: 1000;
     backdrop-filter: blur(5px);
     background: transparent;
-    // border: 2px solid red;
     position: sticky;
     width: 100%;
     top: 0;
@@ -38,13 +37,13 @@ const ContactButton = styled.nav`
         font-family: "Poppins", sans-serif;
         letter-spacing: 0.15px;
         color: rgb(212, 212, 212);
-        padding: 10px 30px;
+        padding: 10px 20px;
         border-radius: 10px;
         transform: scaleX(1.2);
         &:hover {
             background-color: rgba(112, 112, 112, 0.4);
         }
-        margin-right: 25px;
+        margin-right: -15px;
     }
 `;
 
