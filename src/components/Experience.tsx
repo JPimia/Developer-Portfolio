@@ -86,11 +86,21 @@ const ExperienceSection: React.FC = () => (
             </CompanyInfo>
 
             <Paragraph>
-                Currently, I am working on WebHR Mobile Application, a
-                Cloud-based Social HR Software used worldwide. As a React.js
-                developer with 2.5 years of experience, I have a strong
-                foundation in creating dynamic and responsive mobile and web
-                applications.
+                I worked on the company's internal cross-platform project Runco
+                as both a front-end and back-end developer. Runco is a
+                cloud-based system framework designed to create project
+                structures tailored to customer needs. It enables fully
+                development-ready project setups within 30 minutes, providing a
+                scalable and efficient foundation for software development.
+                <br />
+                <br />
+                My experience with Flutter has allowed me to develop
+                cross-platform mobile applications that run seamlessly on both
+                iOS and Android platforms. Additionally, my proficiency in
+                React.js has equipped me with the skills to create fast,
+                scalable, and dynamic web pages with excellent user experiences.
+                I have a great understanding of component-based architecture and
+                state management.
             </Paragraph>
 
             <SkillsContainer>
