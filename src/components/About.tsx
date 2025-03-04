@@ -20,7 +20,7 @@ const Paragraph = styled.p`
     font-size: 20px;
     font-weight: 500;
     letter-spacing: -0.05em;
-    max-width: 800px;
+    max-width: 780px;
     justify-content: center;
     text-align: center;
     color: #e5e7eb;
