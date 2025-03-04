@@ -5,7 +5,7 @@ import { FaBriefcase } from "react-icons/fa"; // For company icon
 const ExperienceWrapper = styled.section`
     width: 100%;
     padding: 50px 20px;
-
+    justify-content: center;
     color: white;
     display: flex;
     flex-direction: column;
@@ -27,20 +27,22 @@ const SubHeader = styled.p`
 `;
 
 const ExperienceContainer = styled.div`
+    display: flex;
+    flex-direction: column;
     max-width: 800px;
 
     padding: 30px;
     border-radius: 10px;
 
     text-align: left;
-    display: flex;
-    flex-direction: column;
     gap: 15px;
 `;
 
 const CompanyInfo = styled.div`
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
     gap: 10px;
     font-size: 1.2rem;
     font-weight: 600;
@@ -48,13 +50,17 @@ const CompanyInfo = styled.div`
 `;
 
 const Paragraph = styled.p`
+    display: flex;
     font-size: 18px;
+    justify-content: center;
+    text-align: left;
     line-height: 1.6;
     opacity: 0.8;
 `;
 
 const SkillsContainer = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 15px;
 `;
@@ -76,8 +82,11 @@ const ExperienceSection: React.FC = () => (
 
         <ExperienceContainer>
             <CompanyInfo>
-                <FaBriefcase />
                 <strong style={{ marginBottom: -5 }}>
+                    <FaBriefcase
+                        style={{ marginRight: 8 }}
+                        color="rgb(81, 91, 224)"
+                    />
                     Amabit Oy / Software Developer
                 </strong>
                 <strong style={{ marginLeft: "auto", marginBottom: -5 }}>
