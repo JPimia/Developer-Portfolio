@@ -74,7 +74,7 @@ const RoundCircle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     position: relative;
     top: -50px;
 `;
@@ -114,7 +114,7 @@ const HeroSection: React.FC = () => (
         </RoundCircle>
         <Heading>Jari Pimiä!</Heading>
         <SubHeading>
-            I like to Code & <Highlight>Chill</Highlight>
+            I like to Code &&nbsp;<Highlight>Chill</Highlight>
             <StyledImage src={getImage} alt="icon" />
         </SubHeading>
         <Paragraph>
@@ -122,7 +122,13 @@ const HeroSection: React.FC = () => (
             development, dedicated to crafting elegant and user-friendly mobile
             applications.
         </Paragraph>
-        <ContactButton>Contact Me</ContactButton>
+        <ContactButton
+            onClick={() =>
+                (window.location.href = "mailto:jari.pimiaa@gmail.com")
+            }
+        >
+            Contact Me
+        </ContactButton>
     </HeroWrapper>
 );
 
