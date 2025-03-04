@@ -51,7 +51,9 @@ const ContactButton = styled.nav`
 const Header: React.FC = () => (
     <NavBarWrapper>
         <Logo>
-            <Signature src={signature} alt="signature" />
+            <a href="/">
+                <Signature src={signature} alt="signature" />
+            </a>
         </Logo>
         <ContactButton>
             <a href="mailto:jari.pimiaa@gmail.com">Contact</a>
