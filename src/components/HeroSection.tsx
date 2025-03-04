@@ -50,6 +50,7 @@ const Paragraph = styled.p`
     justify-content: center;
     text-align: center;
     color: #e5e7eb;
+    opacity: 0.8;
     margin: 1.25rem;
 `;
 
