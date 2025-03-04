@@ -44,12 +44,13 @@ const CompanyInfo = styled.div`
     gap: 10px;
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgb(182, 182, 182);
+    color: rgb(255, 255, 255);
 `;
 
 const Paragraph = styled.p`
     font-size: 18px;
     line-height: 1.6;
+    opacity: 0.8;
 `;
 
 const SkillsContainer = styled.div`
@@ -76,8 +77,10 @@ const ExperienceSection: React.FC = () => (
         <ExperienceContainer>
             <CompanyInfo>
                 <FaBriefcase />
-                <strong>Amabit Oy / Software Developer</strong>
-                <strong style={{ marginLeft: "auto" }}>
+                <strong style={{ marginBottom: -5 }}>
+                    Amabit Oy / Software Developer
+                </strong>
+                <strong style={{ marginLeft: "auto", marginBottom: -5 }}>
                     April 2024 - January 2025
                 </strong>
             </CompanyInfo>
