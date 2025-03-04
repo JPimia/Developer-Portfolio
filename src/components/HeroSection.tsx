@@ -26,12 +26,12 @@ const bounce = keyframes`
 `;
 
 const Heading = styled.h1`
-    width: 1000px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 5rem;
+    letter-spacing: -0.05em;
+    font-size: 4.5rem;
     margin-bottom: 10px;
     animation: ${bounce} 1s infinite;
     @media (max-width: 768px) {
@@ -128,7 +128,7 @@ const HeroSection: React.FC = () => (
             <HeroImage src={heroImage} />
         </RoundCircle>
         <Heading>
-            Hi, I'm<Highlight2>&nbsp;Jari Pimiä!</Highlight2>
+            Hi, I'm<Highlight2>&nbsp;Jari Pimiä!&nbsp;</Highlight2>
         </Heading>
         <SubHeading>
             I like to Code &&nbsp;<Highlight>Chill</Highlight>
