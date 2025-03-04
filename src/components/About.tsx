@@ -32,10 +32,12 @@ const AboutSection: React.FC = () => (
     <AboutSectionWrapper>
         <Header>ABOUT ME</Header>
         <Paragraph>
-            I am a software developer with a passion for building web
-            applications. I specialize in front-end development and have
-            experience with React, Angular, and Vue. I am currently looking for
-            new opportunities to work with a team of talented developers.
+            I specialize in front-end development, working with React and
+            Flutter to build intuitive and visually appealing mobile and web
+            applications. Additionally, I have experience with backend
+            development using Python and C#, as well as cloud services like AWS
+            and Azure to create scalable and efficient systems. I am highly
+            motivated and always eager to expand my programming knowledge.
         </Paragraph>
     </AboutSectionWrapper>
 );
