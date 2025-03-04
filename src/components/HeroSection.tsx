@@ -27,6 +27,10 @@ const bounce = keyframes`
 `;
 
 const Heading = styled.h1`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 5rem;
     margin-bottom: 10px;
     animation: ${bounce} 1s infinite;
@@ -46,7 +50,7 @@ const Paragraph = styled.p`
     font-size: 20px;
     font-weight: 500;
     letter-spacing: -0.05em;
-    max-width: 600px;
+    max-width: 750px;
     justify-content: center;
     text-align: center;
     color: #e5e7eb;
