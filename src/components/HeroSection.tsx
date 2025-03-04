@@ -61,6 +61,13 @@ const Highlight = styled.span`
     color: transparent;
 `;
 
+const Highlight2 = styled.span`
+    font-weight: 600px;
+    background: linear-gradient(to right, #a855f7, #a855f7);
+    -webkit-background-clip: text;
+    color: transparent;
+`;
+
 const StyledImage = styled.img`
     height: 35px;
     width: 50px;
@@ -113,15 +120,18 @@ const HeroSection: React.FC = () => (
         <RoundCircle>
             <HeroImage src={heroImage} />
         </RoundCircle>
-        <Heading>Jari Pimiä!</Heading>
+        <Heading>
+            Hi, I'm <Highlight2>Jari Pimiä!</Highlight2>
+        </Heading>
         <SubHeading>
             I like to Code &&nbsp;<Highlight>Chill</Highlight>
             <StyledImage src={getImage} alt="icon" />
         </SubHeading>
         <Paragraph>
-            Passionate Software Engineer with a focus on React Native
-            development, dedicated to crafting elegant and user-friendly mobile
-            applications.
+            Passionate Software Developer with a focus on React and Flutter
+            development. Dedicated to crafting elegant and user-friendly web and
+            mobile applications. Experienced in leveraging cloud services such
+            as AWS and Azure to build scalable and efficient solutions.
         </Paragraph>
         <ContactButton
             onClick={() =>
