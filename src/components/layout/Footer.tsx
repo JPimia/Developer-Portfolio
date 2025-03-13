@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Social_Icons } from "../constant/socials";
+import { Social_Icons } from "../../constant/socials";
 
 const FooterWrapper = styled.footer`
     width: 100%;
