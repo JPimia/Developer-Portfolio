@@ -1,6 +1,6 @@
 # Personal Developer Portfolio 🚀
 
-[![Site preview](/src/assets/images/portfolio-thumbnail.svg)](https://jaripimia.fi/)
+[![Site preview](/src/assets/images/thumbnail.svg)](https://jaripimia.fi/)
 
 ## Site preview
 
