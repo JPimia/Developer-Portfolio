@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import { FaBriefcase } from "react-icons/fa"; // For company icon
+import { motion, useInView } from "framer-motion";
 
 const ExperienceWrapper = styled.section`
     width: 100%;
@@ -26,7 +27,7 @@ const SubHeader = styled.p`
     color: transparent;
 `;
 
-const ExperienceContainer = styled.div`
+const ExperienceContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     max-width: 800px;
@@ -49,7 +50,7 @@ const CompanyInfo = styled.div`
     color: rgb(255, 255, 255);
 `;
 
-const Paragraph = styled.p`
+const Paragraph = styled(motion.p)`
     display: flex;
     font-size: 18px;
     justify-content: center;
@@ -58,14 +59,14 @@ const Paragraph = styled.p`
     opacity: 0.8;
 `;
 
-const SkillsContainer = styled.div`
+const SkillsContainer = styled(motion.div)`
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 15px;
 `;
 
-const SkillBadge = styled.span`
+const SkillBadge = styled(motion.span)`
     background: rgba(255, 255, 255, 0.11);
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 8px 15px;
@@ -75,53 +76,89 @@ const SkillBadge = styled.span`
     letter-spacing: 1px;
 `;
 
-const ExperienceSection: React.FC = () => (
-    <ExperienceWrapper>
-        <Header>EXPERIENCE</Header>
-        <SubHeader>SOFTWARE DEVELOPER</SubHeader>
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            delayChildren: 0.5,
+            staggerChildren: 0.2,
+        },
+    },
+};
 
-        <ExperienceContainer>
-            <CompanyInfo>
-                <strong style={{ marginBottom: -5 }}>
-                    <FaBriefcase
-                        style={{ marginRight: 8 }}
-                        color="rgb(81, 91, 224)"
-                    />
-                    Amabit Oy / Software Developer
-                </strong>
-                <strong style={{ marginLeft: "auto", marginBottom: -5 }}>
-                    April 2024 - January 2025
-                </strong>
-            </CompanyInfo>
+const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 },
+};
 
-            <Paragraph>
-                I worked on the company's internal cross-platform project Runco
-                as both a front-end and back-end developer. Runco is a
-                cloud-based system framework designed to create project
-                structures tailored to customer needs. It enables fully
-                development-ready project setups within 30 minutes, providing a
-                scalable and efficient foundation for software development.
-                <br />
-                <br />
-                My experience with Flutter has allowed me to develop
-                cross-platform mobile applications that run seamlessly on both
-                iOS and Android platforms. Additionally, my proficiency in
-                React.js has equipped me with the skills to create fast,
-                scalable, and dynamic web pages with excellent user experiences.
-                I have a great understanding of component-based architecture and
-                state management.
-            </Paragraph>
+const ExperienceSection: React.FC = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.3 });
 
-            <SkillsContainer>
-                <SkillBadge>Flutter</SkillBadge>
-                <SkillBadge>React</SkillBadge>
-                <SkillBadge>Python</SkillBadge>
-                <SkillBadge>TypeScript</SkillBadge>
-                <SkillBadge>AWS</SkillBadge>
-                <SkillBadge>Azure</SkillBadge>
-            </SkillsContainer>
-        </ExperienceContainer>
-    </ExperienceWrapper>
-);
+    return (
+        <ExperienceWrapper ref={ref}>
+            <Header>EXPERIENCE</Header>
+            <SubHeader>SOFTWARE DEVELOPER</SubHeader>
+
+            <ExperienceContainer
+                initial={{ opacity: 0 }}
+                animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+                transition={{ duration: 1, delay: 0 }}
+            >
+                <CompanyInfo>
+                    <strong style={{ marginBottom: -5 }}>
+                        <FaBriefcase
+                            style={{ marginRight: 8 }}
+                            color="rgb(81, 91, 224)"
+                        />
+                        Amabit Oy / Software Developer
+                    </strong>
+                    <strong style={{ marginLeft: "auto", marginBottom: -5 }}>
+                        April 2024 - January 2025
+                    </strong>
+                </CompanyInfo>
+
+                <Paragraph
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={
+                        isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }
+                    }
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                    I worked on the company's internal cross-platform project
+                    Runco as both a front-end and back-end developer. Runco is a
+                    cloud-based system framework designed to create project
+                    structures tailored to customer needs. It enables fully
+                    development-ready project setups within 30 minutes,
+                    providing a scalable and efficient foundation for software
+                    development.
+                    <br />
+                    <br />
+                    My experience with Flutter has allowed me to develop
+                    cross-platform mobile applications that run seamlessly on
+                    both iOS and Android platforms. Additionally, my proficiency
+                    in React.js has equipped me with the skills to create fast,
+                    scalable, and dynamic web pages with excellent user
+                    experiences. I have a great understanding of component-based
+                    architecture and state management.
+                </Paragraph>
+
+                <SkillsContainer
+                    variants={container}
+                    initial="hidden"
+                    animate={isInView ? "show" : "hidden"}
+                >
+                    <SkillBadge variants={item}>Flutter</SkillBadge>
+                    <SkillBadge variants={item}>React</SkillBadge>
+                    <SkillBadge variants={item}>Python</SkillBadge>
+                    <SkillBadge variants={item}>TypeScript</SkillBadge>
+                    <SkillBadge variants={item}>AWS</SkillBadge>
+                    <SkillBadge variants={item}>Azure</SkillBadge>
+                </SkillsContainer>
+            </ExperienceContainer>
+        </ExperienceWrapper>
+    );
+};
 
 export default ExperienceSection;
