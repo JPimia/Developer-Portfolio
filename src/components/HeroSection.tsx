@@ -138,7 +138,7 @@ const HeroSection: React.FC = () => (
             Passionate Software Developer with a focus on React and Flutter
             development. Dedicated to crafting elegant and user-friendly web and
             mobile applications. Experienced in leveraging cloud services such
-            as AWS and Azure to build scalable and efficient solutionsssss.
+            as AWS and Azure to build scalable and efficient solutions.
         </Paragraph>
         <ContactButton
             onClick={() =>
