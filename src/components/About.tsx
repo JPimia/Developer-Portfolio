@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const AboutSectionWrapper = styled.section`
     width: 100%;
@@ -27,19 +28,26 @@ const Paragraph = styled.p`
     opacity: 0.8;
     margin: 1.25rem;
 `;
-
 const AboutSection: React.FC = () => (
-    <AboutSectionWrapper>
-        <Header>ABOUT ME</Header>
-        <Paragraph>
-            I specialize in front-end development, working with React and
-            Flutter to build intuitive and visually appealing mobile and web
-            applications. Additionally, I have experience with backend
-            development using Python and C#, as well as cloud services like AWS
-            and Azure to create scalable and efficient systems. I am highly
-            motivated and always eager to expand my programming knowledge.
-        </Paragraph>
-    </AboutSectionWrapper>
+    <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        layout
+    >
+        <AboutSectionWrapper>
+            <Header>ABOUT ME</Header>
+            <Paragraph>
+                I specialize in front-end development, working with React and
+                Flutter to build intuitive and visually appealing mobile and web
+                applications. Additionally, I have experience with backend
+                development using Python and C#, as well as cloud services like
+                AWS and Azure to create scalable and efficient systems. I am
+                highly motivated and always eager to expand my programming
+                knowledge.
+            </Paragraph>
+        </AboutSectionWrapper>
+    </motion.div>
 );
 
 export default AboutSection;
