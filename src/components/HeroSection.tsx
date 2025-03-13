@@ -3,8 +3,9 @@ import styled, { keyframes } from "styled-components";
 // import Icon from "../icon.png";
 import getImage from "../assets/images/popcorn.gif";
 import heroImage from "../assets/images/hero-image.png";
+import { motion } from "framer-motion";
 
-const HeroWrapper = styled.section`
+const HeroWrapper = styled(motion.div)`
     width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -81,7 +82,7 @@ const StyledImage = styled.img`
     margin-top: 1px;
 `;
 
-const RoundCircle = styled.div`
+const RoundCircle = styled(motion.div)`
     height: 250px;
     width: 250px;
     background-color: #333;
@@ -123,8 +124,16 @@ const ContactButton = styled.button`
 `;
 
 const HeroSection: React.FC = () => (
-    <HeroWrapper>
-        <RoundCircle>
+    <HeroWrapper
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+    >
+        <RoundCircle
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5 }}
+        >
             <HeroImage src={heroImage} />
         </RoundCircle>
         <Heading>
