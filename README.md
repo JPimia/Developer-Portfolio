@@ -1,5 +1,7 @@
 # Personal Developer Portfolio 🚀
 
+[![Site preview](/src/assets/images/portfolio-thumbnail.svg)](https://jaripimia.fi/)
+
 ## Site preview
 
 Welcome to my developer portfolio! This project showcases my skills, projects, and experience as a developer. Built with [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), and [Styled Components](https://styled-components.com/), it not only provides a visually appealing representation of my work but also ensures optimal performance. [View the live site](http://www.jaripimia.fi).
