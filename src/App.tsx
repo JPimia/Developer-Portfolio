@@ -1,4 +1,4 @@
-import { GlobalStyles } from "./styles/GlobalStyles";
+import GlobalStyles from "./styles/GlobalStyles";
 import NavBar from "./components/NavBar";
 import "./styles/Styles.css";
 // import "./App.css";

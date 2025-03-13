@@ -15,3 +15,5 @@ export const GlobalStyles = createGlobalStyle`
     overflow-y: scroll;
   }
 `;
+
+export default GlobalStyles;
