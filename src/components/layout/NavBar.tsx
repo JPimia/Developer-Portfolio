@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import signature from "../assets/images/signature.png";
+import signature from "../../assets/images/signature.png";
 
 const NavBarWrapper = styled.header`
     display: flex;
