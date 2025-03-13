@@ -94,7 +94,7 @@ const item = {
 
 const ExperienceSection: React.FC = () => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, amount: 0.3 });
+    const isInView = useInView(ref, { amount: 0.3 });
 
     return (
         <ExperienceWrapper ref={ref}>
@@ -104,7 +104,7 @@ const ExperienceSection: React.FC = () => {
             <ExperienceContainer
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-                transition={{ duration: 1, delay: 0 }}
+                transition={{ duration: 1 }}
             >
                 <CompanyInfo>
                     <strong style={{ marginBottom: -5 }}>
