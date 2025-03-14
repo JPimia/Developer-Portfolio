@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import project1 from "../assets/images/coming.png";
+// import project1 from "../assets/images/coming.png";
+import { projects } from "../data/projects";
 
 const ProjectsWrapper = styled(motion.div)`
     width: 100%;
@@ -103,34 +104,24 @@ const Projects: React.FC = () => (
             <Header>PROJECTS</Header>
             <SubHeader>EXPLORE</SubHeader>
             <ProjectsContainer>
-                <ProjectBadge>
-                    <ProjectImage src={project1} />
-                    <ProjectDescription>
-                        <ProjectTitle>Project 1</ProjectTitle>
-                        This is description for this example project
-                        placeholder.
-                    </ProjectDescription>
-                </ProjectBadge>
-                <ProjectBadge>
-                    <ProjectImage src={project1} />
-                    <ProjectDescription>
-                        <ProjectTitle>Project 2</ProjectTitle>
-                        This is description for this example project
-                        placeholder.
-                    </ProjectDescription>
-                </ProjectBadge>
-                <ProjectBadge>
-                    <ProjectImage src={project1} />
-                    <ProjectDescription>
-                        <ProjectTitle>Project 3</ProjectTitle>
-                    </ProjectDescription>
-                </ProjectBadge>
-                <ProjectBadge>
-                    <ProjectImage src={project1} />
-                    <ProjectDescription>
-                        <ProjectTitle>Project 4</ProjectTitle>
-                    </ProjectDescription>
-                </ProjectBadge>
+                {projects.map((project, index) => (
+                    <ProjectBadge key={index}>
+                        <ProjectImage src={project.image} />
+                        <ProjectDescription>
+                            <ProjectTitle>{project.title}</ProjectTitle>
+                            {project.description ? (
+                                <ProjectDescription>
+                                    {project.description}
+                                </ProjectDescription>
+                            ) : (
+                                <ProjectDescription>
+                                    This is description for this example project
+                                    placeholder.
+                                </ProjectDescription>
+                            )}
+                        </ProjectDescription>
+                    </ProjectBadge>
+                ))}
             </ProjectsContainer>
         </ProjectCard>
     </ProjectsWrapper>
