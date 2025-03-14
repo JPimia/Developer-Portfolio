@@ -1,4 +1,4 @@
-import project1 from "../assets/images/coming.png";
+import placeholder from "../assets/images/coming.png";
 
 export interface Project {
     title: string;
@@ -10,21 +10,21 @@ export const projects: Project[] = [
     {
         title: "Project 1",
         description: "This is description for this example project placeholder.",
-        image: project1,
+        image: placeholder,
     },
     {
         title: "Project 2",
         description: "This is description for this example project placeholder.",
-        image: project1,
+        image: placeholder,
     },
     {
         title: "Project 3",
         description: "This is description fodffsddsfaceholder.",
-        image: "../assets/images/coming.png",
+        image: placeholder,
     },
     {
         title: "Project 4",
         description: "This is description asdholder.",
-        image: "../assets/images/coming.png",
+        image: placeholder,
     },
 ]; 
