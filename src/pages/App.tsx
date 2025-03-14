@@ -7,6 +7,7 @@ import AboutSection from "../components/About";
 import ExperienceSection from "../components/Experience";
 import StarsCanvas from "../components/common/StarsBackground";
 import Footer from "../components/layout/Footer";
+import Projects from "../components/Projects";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <HeroSection />
             <AboutSection />
             <ExperienceSection />
+            <Projects />
             <Footer />
         </div>
     );

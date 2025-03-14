@@ -31,10 +31,8 @@ const ExperienceContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     max-width: 800px;
-
     padding: 30px;
     border-radius: 10px;
-
     text-align: left;
     gap: 15px;
 `;
