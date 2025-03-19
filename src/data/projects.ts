@@ -19,7 +19,7 @@ export const projects: Project[] = [
     },
     {
         title: "Project 3",
-        description: "This is description fodffsddsfaceholder.",
+        description: "This is description fodffsddassfaceholder.",
         image: placeholder,
     },
     {
