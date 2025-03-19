@@ -19,12 +19,12 @@ export const projects: Project[] = [
     },
     {
         title: "Project 3",
-        description: "This is description fodffsddassfaceholder.",
+        description: "This is description placeholder.",
         image: placeholder,
     },
     {
         title: "Project 4",
-        description: "This is description asdholder.",
+        description: "This is description placeholder also.",
         image: placeholder,
     },
 ]; 
