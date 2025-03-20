@@ -24,7 +24,7 @@ export const projects: Project[] = [
     },
     {
         title: "Project 4",
-        description: "This is description placeholder also.",
+        description: "This is description placeholder alsoo.",
         image: placeholder,
     },
 ]; 
